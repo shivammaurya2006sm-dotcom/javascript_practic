@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Prime number check </title>
+</head>
+<style>
+body{
+  margin-top: 100px;
+  background-color: rgb(250, 201, 208);
+  text-align: center;
+  color: blue;
+}
+.learn{
+   margin-left: 21.5%;
+  border: 3px solid purple;
+  border-radius: 10px;
+  background-color: lightblue;
+  /* text-decoration: overline; */
+  text-decoration: underline;
+  padding:20px;
+  width: 400px;
+}
+h2:hover{
+  transform: skewx(15deg);
+ /* transform: rotate(180deg); */
+ background-color: rgb(193, 152, 245);
+  color: red;
+}
+.output{
+  color: white;
+}
+</style>
+
+<body>
+  <!-- <input id="pass" type="Number"> -->
+    <h2 class="learn">Checking the number is prime or composit </h2>
+    <script>
+       var a=Number(prompt("Enter the a number-"))
+  let num=a;
+  let count=0
+  
+  for(let i=1; i<=num; i++){
+    if(num % i==0){
+      count++;
+    }
+        }
+    if (count==2){
+      document.write("the number is prime");
+    }
+
+    else{
+  document.write("number is composit");
+}
+
+    </script>
+</body>
+</html>
