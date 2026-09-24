@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+    <head>
+    <title>polindrome</title>
+    </head>
+    <body>
+        <!-- <h4>check the number is palindrome or not</h4> -->
+    <script>
+        var value=Number(prompt("Enter a number"));
+     let number=value;
+     let count=number;
+     let temp=0;
+     while(number>0){
+     let g= number%10;
+        temp=temp*10+g;
+         number=parseInt(number/10);
+     }
+     if(temp==count){
+      document.write("it is a palindrome number");
+     }
+     else{
+        document.write("it is not a palindrome number");
+     }
+    </script>
+    </body>
+</html>
