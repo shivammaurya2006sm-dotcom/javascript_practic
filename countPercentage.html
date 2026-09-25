@@ -1,44 +1,37 @@
-<!DOCTYPE html>
+ <!DOCTYPE html>
 <html>
-    <head>
-        <title>count percentage</title>
-    </head>
-    <body>
-        <script>
-            let value=Number(prompt("Enter your number"));
-            let marks=value;
-            let totalmarks=600;
-            let grade=(marks/totalmarks)*100;
-            let percentage=Number(grade.toFixed(2));
-
-            if(typeof value !== "Number"){
-                document.write("Please re-enter your number")
-            }
-
-            if(percentage>100){
-                document.write("Invalid Entry");
-            }
-
-            if(percentage>=90 && percentage<=100){
-            document.write("Excelent you have got "+percentage+"%");
-            }
-
-            if(percentage>=80 &&percentage<90){
-             document.write("Very Good you have got "+percentage+"%")
-            }
-
-             if(percentage>=60 &&percentage<80){
-             document.write("Good you have got "+percentage+"%")
-            }
-
-             if(percentage>=33 &&percentage<60){
-             document.write("Pass you have got "+percentage+"%")
-            }
-
-             if(percentage<=32){
-                 document.write("Fail you have got "+percentage+"%")
-                }
-            
-        </script>
-    </body>
+  <head>
+    <title>Hello, World!</title>
+  </head>
+  <body>
+       
+      <script>
+          let value=Number(prompt("Enter a numbe"));
+        
+      let marks=value;
+      <!-- console.log(marks); -->
+        if(marks>600|| marks<0 || Number.isNaN(marks)){
+          document.write("Plese re-enter your marks");
+        }
+        else{
+          let grade=(marks/600)*100;
+         let percentage=Number(grade.toFixed(2));
+        if(percentage>=90){
+          document.write("Excelent you have got "+percentage+"%");
+        }
+        else if(percentage>=80 && percentage<90){
+        document.write("Very Good you have got "+percentage+"%");
+        }
+        else if(percentage>=60 && percentage<80){
+        document.write("Good you have got "+percentage+"%")
+        }
+        else if(percentage>=33 && percentage<60){
+        document.write("Pass you have got "+percentage+"%")
+        }
+        else{
+          document.write("Fail you have got "+percentage+"%")
+        }
+        }
+      </script>
+  </body>
 </html>
