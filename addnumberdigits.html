@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Adding a number's digits</title>
+    </head>
+    <body>
+        <script>
+            let number=9999999999;
+            let add=0;
+            while(number>0){
+            let sum=number%10;
+            add +=sum;
+             number=parseInt(number/10);
+            }
+            document.write("The sum of all digits present in your number is : ",add);
+        </script>
+    </body>
+</html>
