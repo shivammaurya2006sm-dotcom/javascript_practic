@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Adding two numbers usind timer function</title>
+    </head>
+    <script>   
+            let sum=Number(prompt("enetr a number"));
+            let run=Number(prompt("enter a number"));
+            document.write("please wait.....");            
+        function showMessage(){
+        let num=sum;
+        let cum=run;      
+        let bum=num+cum;
+        document.write("The sum of "+num+" and "+cum+ " is "+bum);            
+        }
+             setTimeout(showMessage,1000);
+
+    </script>
+</html>
