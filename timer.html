@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title></title>
+    </head>
+    <body>
+        <button onclick="startTimeout()">START_TIMEOUT</button>
+        <div id="output"></div>
+          <button onclick="cancletimeout()">CANCEL_TIMEOUT</button>
+        <div id="out"></div>
+        <button onclick="startInterval()">SET_INTERVAL</button>
+        <div id="put"></div>
+        <button onclick="cancelInterval()">CANCEL_INTERVAL</button>
+        <div id="putout"></div>
+
+        <script>
+     let timeoutID;
+      
+     function startTimeout(){
+        timeoutID= setTimeout(function(){
+    document.getElementById("output").innerHTML=
+    "Timeout executed after 1 seconds";
+        },4000);
+     }
+
+     function cancletimeout(){
+        // let cancle=setTimeout(1000);
+        clearTimeout(timeoutID);
+        document.getElementById("out").innerHTML=
+        "it is cancle timeout";
+     }
+
+    //   function startinterval(){
+    //     timeoutID= setInterval(() =>  interval);(function(){
+    // document.getElementById("put").innerHTML=
+    // "Timeout executed after 1 seconds";
+    //     },1000);
+    // }
+
+
+    let intervalID;
+
+function startInterval() {
+    intervalID = setInterval(function() {
+        document.getElementById("put").innerHTML =
+            "Hello, it is set interval function ";
+    }, 2000);
+}
+
+function stopInterval() {
+    clearInterval(intervalID);
+}
+
+ function cancelInterval(){
+        // let cancle=clearInterval(1000);
+        clearInterval(setInterval);
+        document.getElementById("putout").innerHTML=
+        "it is cancleInterval timeout";
+     }
+        </script>
+    </body>
+</html>
